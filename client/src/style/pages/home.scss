@@ -1,0 +1,110 @@
+@import "../main/variables.scss";
+
+.home {
+  background-image: url("../../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  .home-div {
+    height: 600px;
+    font-family: "Roboto", sans-serif;
+    margin: $mainPadding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      -webkit-animation: backInLeft;
+      animation: backInLeft;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      animation-duration: 1s;
+      padding: $bigPadding;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        color: $mainColor;
+        font-size: xx-large;
+      }
+      h2 {
+        font-family: "Montserrat", sans-serif;
+        color: $secondColor;
+        margin-bottom: 1rem;
+      }
+      a {
+        width: 100px;
+        padding: 0.5rem;
+        border: 1px solid #ab2020;
+        border-radius: 0.5rem;
+        font-size: large;
+        text-decoration: none;
+        background-color: #eda0a0;
+        color: $thirdColor;
+      }
+    }
+    .right {
+      padding: $bigPadding;
+      -webkit-animation: backInRight;
+      animation: backInRight;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      img {
+        height: 400px;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+
+@keyframes backInLeft {
+  0% {
+    -webkit-transform: translateX(-2000px) scale(0.7);
+    transform: translateX(-2000px) scale(0.7);
+    opacity: 0.7;
+  }
+  80% {
+    -webkit-transform: translateX(0) scale(0.7);
+    transform: translateX(0) scale(0.7);
+    opacity: 0.7;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes backInRight {
+  0% {
+    -webkit-transform: translateX(2000px) scale(0.7);
+    transform: translateX(2000px) scale(0.7);
+    opacity: 0.7;
+  }
+  80% {
+    -webkit-transform: translateX(0) scale(0.7);
+    transform: translateX(0) scale(0.7);
+    opacity: 0.7;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes backInRight {
+  0% {
+    -webkit-transform: translateX(2000px) scale(0.7);
+    transform: translateX(2000px) scale(0.7);
+    opacity: 0.7;
+  }
+  80% {
+    -webkit-transform: translateX(0) scale(0.7);
+    transform: translateX(0) scale(0.7);
+    opacity: 0.7;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
