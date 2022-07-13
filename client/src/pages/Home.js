@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import "../style/pages/home.scss";
 import logo from "../images/prova.png";
 
 export default function Home() {
   return (
     <section className="home">
-      <Navbar />
       <div className="home-div">
         <div className="left">
           <h1>uTravel.</h1>

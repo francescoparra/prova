@@ -1,12 +1,10 @@
 import React from "react";
 import "../style/pages/about.scss";
-import Navbar from "../components/Navbar";
 import chicago from "../images/chicago.png";
 
 export default function About() {
   return (
     <section className="about">
-      <Navbar />
       <div className="about-div">
         <div className="left-side">
             <div className="test">
