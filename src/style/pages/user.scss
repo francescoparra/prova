@@ -1,9 +1,10 @@
 @import "../main/variables.scss";
 
 .register {
-  background: url("../../images/background.png") no-repeat center;
+  background: url("../../images/background.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   .register-div {
     padding: 3rem 0rem;
     display: flex;
